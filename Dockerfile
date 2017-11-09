@@ -10,7 +10,7 @@ RUN pip3 install --upgrade pip
 #Pull source
 RUN git clone https://github.com/eifinger/server-maintenance.git
 RUN pip3 install --upgrade virtualenv
-cd server-maintenance
+RUN cd server-maintenance
 RUN virtualenv -p python3 venv
 
 RUN find /server-maintenance -name "*.sh" -execdir chmod u+x {} +
