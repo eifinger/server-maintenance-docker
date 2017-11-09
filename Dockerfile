@@ -1,10 +1,10 @@
 # Use an official Python runtime as a parent image
-FROM python:3
+FROM ubuntu
 
 # Set the working directory to /amaintenance
 WORKDIR /maintenance
 
 #Pull source
 RUN git clone https://github.com/eifinger/server-maintenance.git
-RUN pip install virtualenv
-RUN virtualenv venv
+RUN pip3 install --upgrade virtualenv
+RUN virtualenv -p python3 venv
