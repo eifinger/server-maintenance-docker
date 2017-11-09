@@ -6,4 +6,5 @@ WORKDIR /maintenance
 
 #Pull source
 RUN git clone https://github.com/eifinger/server-maintenance.git
+RUN pip install --no-cachedir virtualenv
 RUN virtualenv venv
