@@ -1,8 +1,7 @@
 # Use an official Python runtime as a parent image
 FROM ubuntu
 
-# Set the working directory to /amaintenance
-WORKDIR /maintenance
+RUN apt-get install git
 
 #Pull source
 RUN git clone https://github.com/eifinger/server-maintenance.git
