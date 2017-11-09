@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt-get install -y git
 RUN apt-get install -y python3
 RUN apt-get install -y python3-pip
-RUN pip install --upgrade pip
+RUN pip3 install --upgrade pip
 
 #Pull source
 RUN git clone https://github.com/eifinger/server-maintenance.git
